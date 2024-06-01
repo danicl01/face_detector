@@ -1,12 +1,12 @@
 """
-Este script fue basado en un tutorial de NeuralNine.
-Fuente: https://www.youtube.com/watch?v=5cg_yggtkso
+This script was based on a tutorial by NeuralNine.
+Source: https://www.youtube.com/watch?v=5cg_yggtkso
 """
 
 import cv2
 import pathlib
 
-cascade_path = pathlib.Path(cv2.__file__).parent.absolute() / 'haarcascade_frontalface_default.xml'
+cascade_path = pathlib.Path(cv2.__file__).parent.absolute() / 'data/haarcascade_frontalface_default.xml'
 print(cascade_path)
 
 clf = cv2.CascadeClassifier(str(cascade_path))
